@@ -1,0 +1,11 @@
+{
+  "name": "broadlink_ac_mqtt",
+  "version": "dev",
+  "slug": "broadlink_ac_mqtt",
+  "description": "Bridging Broadlink-based AC to MQTT",
+  "url": "https://github.com/emosenkis/broadlink_ac_mqtt_addon/blob/main/README.md",
+  "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
+  "map": ["config"],
+  "services": ["mqtt:need"],
+  "host_network": true
+}
