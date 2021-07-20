@@ -3,8 +3,7 @@
 exec \
   python3 /app/ac2mqtt/monitor.py \
   -ms "$(bashio::services mqtt host)" \
+  -mp "$(bashio::services mqtt port)" \
   -mU "$(bashio::services mqtt username)" \
   -mP "$(bashio::services mqtt password)" \
   -c /config/broadlink_ac_mqtt.yaml
-# Removed pending https://github.com/liaan/broadlink_ac_mqtt/pull/80
-#  -mp "$(bashio::services mqtt port)" \
