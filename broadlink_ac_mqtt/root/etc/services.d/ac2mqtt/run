@@ -1,4 +1,4 @@
-#!/usr/bin/with-contenv bashio
+#!/command/with-contenv bashio
 
 exec \
   python3 /app/ac2mqtt/monitor.py \
