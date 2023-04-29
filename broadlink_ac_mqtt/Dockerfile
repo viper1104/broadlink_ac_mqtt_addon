@@ -14,7 +14,7 @@ ENV PYTHONIOENCODING="UTF-8"
 
 RUN \
  echo "**** install packages ****" && \
-apk add --no-cache --virtual=build-dependencies \
+ apk add --no-cache --virtual=build-dependencies \
     g++ \
     gcc \
     curl \
