@@ -28,7 +28,7 @@ RUN \
         py3-yaml \
         py3-pip \
         jq \
-        py3-parser && \
+        py3-parser \
  echo "**** install pip packages ****" && \
  pip install --no-cache-dir -U pycrypto && \
  echo "**** Install app ****" && \
