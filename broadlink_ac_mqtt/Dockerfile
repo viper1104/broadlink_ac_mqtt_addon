@@ -19,11 +19,11 @@ RUN \
     gcc \
     curl \
     make \
-    python3 \
+    python3.7-dev \
     curl \
     && \
  apk add --no-cache \
-        python3 \
+        python3.7-dev \
         py3-paho-mqtt \
         py3-yaml \
         py3-pip \
