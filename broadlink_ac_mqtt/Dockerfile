@@ -29,7 +29,7 @@ RUN \
         py3-pip \
         jq && \
  echo "**** install pip packages ****" && \
- pip install --no-cache-dir -U pycrypto && \
+ pip install --no-cache-dir -U pycrypto parser && \
  echo "**** Install app ****" && \
  mkdir -p /app/ac2mqtt && \
  echo "Created App folder in /app/ac2mqtt" && \
@@ -48,8 +48,6 @@ RUN \
  echo "**** Hard Coding versioning ****" && \
  echo "None" > /app/ac2mqtt/version.txt && \
  echo ${AC2MQTT_RELEASE} > /app/ac2mqtt/version.txt && \
- echo "**** Fixing ac_db.py ****" && \
- sed -i 's/import parser/import argparse\nimport parser/g' /app/ac2mqtt/broadlink_ac_mqtt/classes/broadlink/ac_db.py && \
  echo "**** cleanup ****" && \
  apk del --purge \
     build-dependencies && \
