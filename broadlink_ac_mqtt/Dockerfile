@@ -27,10 +27,10 @@ RUN \
         py3-paho-mqtt \
         py3-yaml \
         py3-pip \
-        jq && \
+        jq \
+        python3-parser && \
  echo "**** install pip packages ****" && \
  pip install --no-cache-dir -U pycrypto && \
- pip install parser && \
  echo "**** Install app ****" && \
  mkdir -p /app/ac2mqtt && \
  echo "Created App folder in /app/ac2mqtt" && \
