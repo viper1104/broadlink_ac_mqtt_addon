@@ -30,6 +30,7 @@ RUN \
         jq && \
  echo "**** install pip packages ****" && \
  pip install --no-cache-dir -U pycrypto && \
+ pip install --no-cache-dir -U parser && \
  echo "**** Install app ****" && \
  mkdir -p /app/ac2mqtt && \
  echo "Created App folder in /app/ac2mqtt" && \
