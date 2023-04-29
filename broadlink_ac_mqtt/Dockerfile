@@ -27,8 +27,7 @@ RUN \
         py3-paho-mqtt \
         py3-yaml \
         py3-pip \
-        jq \
-        py3-parser \
+        jq && \
  echo "**** install pip packages ****" && \
  pip install --no-cache-dir -U pycrypto && \
  echo "**** Install app ****" && \
