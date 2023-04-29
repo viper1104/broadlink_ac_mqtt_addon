@@ -14,16 +14,17 @@ ENV PYTHONIOENCODING="UTF-8"
 
 RUN \
  echo "**** install packages ****" && \
- apk add --no-cache --virtual=build-dependencies \
+apk add --no-cache --virtual=build-dependencies \
     g++ \
     gcc \
     curl \
     make \
-    python3.8 \
+    python3-dev \
     curl \
+    python-dev \
     && \
  apk add --no-cache \
-        python3.8 \
+        python3 \
         py3-paho-mqtt \
         py3-yaml \
         py3-pip \
