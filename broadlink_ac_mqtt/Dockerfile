@@ -21,13 +21,13 @@ apk add --no-cache --virtual=build-dependencies \
     make \
     python3-dev \
     curl \
-    python-dev \
     && \
  apk add --no-cache \
         python3 \
         py3-paho-mqtt \
         py3-yaml \
         py3-pip \
+        py3-parser \
         jq && \
  echo "**** install pip packages ****" && \
  pip install --no-cache-dir -U pycrypto && \
