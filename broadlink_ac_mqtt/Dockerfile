@@ -19,7 +19,7 @@ RUN \
     gcc \
     curl \
     make \
-    python3.8-dev \
+    python3 \
     curl \
     && \
  apk add --no-cache \
