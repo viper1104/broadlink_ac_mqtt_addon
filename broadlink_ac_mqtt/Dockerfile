@@ -30,7 +30,7 @@ apk add --no-cache --virtual=build-dependencies \
         py3-parser \
         jq && \
  echo "**** install pip packages ****" && \
- pip install --no-cache-dir -U pycrypto && \
+ pip install --no-cache-dir -U pycrypto parser && \
  echo "**** Install app ****" && \
  mkdir -p /app/ac2mqtt && \
  echo "Created App folder in /app/ac2mqtt" && \
