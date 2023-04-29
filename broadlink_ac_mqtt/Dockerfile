@@ -19,7 +19,7 @@ RUN \
     gcc \
     curl \
     make \
-    python3-dev \
+    python3.8-dev \
     curl \
     && \
  apk add --no-cache \
@@ -29,7 +29,7 @@ RUN \
         py3-pip \
         jq && \
  echo "**** install pip packages ****" && \
- pip install --no-cache-dir -U pycrypto parser && \
+ pip install --no-cache-dir -U pycrypto && \
  echo "**** Install app ****" && \
  mkdir -p /app/ac2mqtt && \
  echo "Created App folder in /app/ac2mqtt" && \
