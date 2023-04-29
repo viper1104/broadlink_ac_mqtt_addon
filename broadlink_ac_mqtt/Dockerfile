@@ -27,8 +27,7 @@ RUN \
         py3-paho-mqtt \
         py3-yaml \
         py3-pip \
-        jq \
-        python3-parser && \
+        jq && \
  echo "**** install pip packages ****" && \
  pip install --no-cache-dir -U pycrypto && \
  echo "**** Install app ****" && \
@@ -49,6 +48,8 @@ RUN \
  echo "**** Hard Coding versioning ****" && \
  echo "None" > /app/ac2mqtt/version.txt && \
  echo ${AC2MQTT_RELEASE} > /app/ac2mqtt/version.txt && \
+ echo "**** Fixing ac_db.py ****" && \
+ sed -i 's/import parser/import argparse\nimport parser/g' /app/ac2mqtt/broadlink_ac_mqtt/classes/broadlink/ac_db.py && \
  echo "**** cleanup ****" && \
  apk del --purge \
     build-dependencies && \
